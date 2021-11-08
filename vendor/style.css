@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 59px !important;
+}
+
+body{
+
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+.site-nav{
+    position: fixed;
+    top: 0;
+    z-index: 52;    
+}
+
+.nav-icon{
+    height: 60px;
+    vertical-align: middle;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+nav ul li a{
+    color:  white !important;
+}
+
+ul li a:hover{
+   color:  #38b000 !important;
+}
+
+nav ul li a.active{
+    color: #38b000 !important;
+}
+
+.social-icon{
+    width: 90px !important;
+}
+
+.social-icon a{
+    margin-right: 3px;
+    font-size: 25px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.social-icon .facebook:hover{
+    color: #4267B2;
+    transform: scale(1.5);
+
+}
+
+.social-icon .instragm:hover{
+    color: #bc2a8d;
+    transform: scale(1.5);
+}
+
+.social-icon .twitter:hover{
+    color: #1DA1F2;
+    transform: scale(1.5);
+}
+
+.who-am-i{
+    margin-top: 3rem !important;
+}
+
+.my-name{
+  font-size: 42px;
+}
+
+.mine{
+    font-size: 70px;
+}
+
+button:focus{
+
+}
+
+.my-image{
+    margin-top: 4rem !important;
+}
+
+#scroll-to-next{
+    position: absolute ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px ;
+    margin: auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff !important;
+}
+
+.about{
+
+}
+
+.about-me-icon{
+
+}
+
+.about-hobby{
+    margin-top: 100px !important;
+}
+
+.diamond{
+    width: 50px;
+    height: auto;
+}
+
+.interests-desc .hobbies:before {
+    content:'';
+    position:absolute;
+    width:1px;
+    height:100%;
+    top:0;
+    left:55px;
+    background:#e9ecef;
+    z-index:1
+}
+
+.interests-desc{
+    transition: all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+}
+
+.interests-desc:hover{
+    background:#fff !important;
+    -webkit-box-shadow:0 10px 25px rgba(60,72,88,0.15);
+    box-shadow:0 10px 25px rgba(60,72,88,0.15);
+    -webkit-transform:translateY(-5px);
+    transform:translateY(-5px);
+
+}
+
+.interests-desc .icon{
+    /*-webkit-transition:all 0.2s ease;*/
+    /*transition:all 0.2s ease*/
+}
+
+.interests-desc:hover .icon{
+    color:#38b000;
+}
+
+.services{
+    background-image: url("../vendor/img/bg-3.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.service-first-col{
+    margin-bottom: 100px;
+}
+
+.services-card{
+    border: none;
+    border-radius: 35px !important;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05) !important;
+    transition: 0.5s;
+}
+
+.services-card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: scale(0.98);
+}
+
+.services-card img{
+    transition: 0.7s;
+}
+
+.services-card:hover img{
+    transform: translateX(50px);
+}
+
+.skills-card img{
+    width: 90px;
+    vertical-align: middle !important;
+    transition:  0.5s;
+}
+
+.skills-card img:hover{
+    transform: scale(1.4);
+    transition:  0.5s;
+}
+
+.contact{
+
+}
+
+.contact-detail a:hover{
+    text-decoration: none;
+    color: #1c7430 !important;
+}
+
+.footer{
+    position: relative;
+    color: #adb5bd; !important;
+    font-size: 15px !important;
+}
+
+
+.footer.footer-bar{
+    padding: 30px 0;
+    border-top: 1px solid #4e555d !important;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #6c757d !important;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 3px rgb(60 72 88 )
+}
+
+.back-to-top:hover{
+    text-decoration: none;
+    color: ghostwhite !important;
+    background: #38b000 !important;
+}
+
+
+.ani-delay-1{
+    animation-delay: 0.5s;
+}
+.ani-delay-2{
+    animation-delay: 1s;
+}
+.ani-delay-3{
+    animation-delay: 1.5s;
+}
+.ani-delay-4{
+    animation-delay: 2s;
+}
+.ani-delay-5{
+    animation-delay: 2.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.interests-desc{-webkit-transition:all 0.2s ease;transition:all 0.2s ease}*/
+/*.interests-desc .hobbies:before{content:'';position:absolute;width:1px;height:100%;top:0;left:55px;background:#e9ecef;z-index:1}*/
+/*.interests-desc .icon{width:40px;-webkit-transition:all 0.2s ease;transition:all 0.2s ease}*/
+/*.interests-desc .title{font-weight:500}*/
+/*.interests-desc:hover{background:#fff !important;-webkit-box-shadow:0 10px 25px rgba(60,72,88,0.15);box-shadow:0 10px 25px rgba(60,72,88,0.15);-webkit-transform:translateY(-5px);transform:translateY(-5px)}*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    . image-column{
+        margin-top: 2rem !important;
+    }
+
+    #scroll-to-next{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    . image-column{
+        margin-top: 2rem !important;
+    }
+
+    #scroll-to-next{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 780px){
+
+    .site-nav .menu-icon{
+        color: #38b000 !important;
+    }
+
+    .site-nav .navbar-nav{
+        margin-top: 10px !important;
+    }
+
+    .site-nav .nav-link{
+        color: #38b000 !important;
+        padding: 0.5rem 1.3rem !important;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+  .nav-title{
+      margin-top: 10px;
+  }
+
+    ul a{
+        padding: 0.8rem 0 !important;
+    }
+
+    .who-am-i{
+        margin-top: 0.5rem !important;
+    }
+
+    .mine{
+        font-size: 30px;
+
+    }
+
+    .two-btn{
+        margin-bottom: 2rem !important;
+    }
+
+    .about-hobby{
+        margin-top: 10px !important;
+    }
+
+    .service-first-col{
+        margin-bottom: 1px;
+    }
+
+}

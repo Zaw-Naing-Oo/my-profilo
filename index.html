@@ -1,0 +1,529 @@
+<div class="loader-container" style="z-index: 2000">
+    <div class="loader">Loading...</div>
+</div>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+
+        }
+        .loader {
+            color: #38b000;
+            font-size: 20px;
+            margin: 100px auto;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-animation: load4 1.3s infinite linear;
+            animation: load4 1.3s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        @-webkit-keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+        @keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+
+    </style>
+
+
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="vendor/style.css">
+</head>
+<body>
+
+<!--header Start-->
+<header class="container-fluid bg-dark site-nav ">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--            Nav bar start -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <img src="vendor/img/user.svg" class="nav-icon" alt="">
+                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-2x menu-icon"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse nav-title" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item mr-1">
+                                    <a class="nav-link px-lg-4 home active" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item mr-1">
+                                    <a class="nav-link px-lg-4 about" href="#about">About Me</a>
+                                </li>
+                                <li class="nav-item mr-1">
+                                    <a class="nav-link px-lg-4 services" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item mr-1">
+                                    <a class="nav-link px-lg-4 contact" href="#contact">Contact Me</a>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex social-icon justify-content-between">
+                                <a href="https://www.facebook.com/" class="facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="instragm">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://twitter.com/home" class="twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!--            Nav bar end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header End-->
+
+<!-- Home Start-->
+<section class="bg-dark home" id="home">
+    <div class="container">
+        <div class="row min-vh-100 flex-column-reverse flex-md-row">
+            <div class="col-12 col-lg-7 col-md-7 mt-5 d-md-flex text-center text-lg-left align-items-center">
+                <div class="who-am-i">
+                    <h1 class="mb-4 mt-5 my-name">I Am <span id="name" class="text-primary"></span></h1>
+                    <h1 class="font-weight-bold mine wow slideInLeft ani-delay-1">A Freelance Developer</h1>
+                    <div class="mt-5 two-btn">
+                        <a href="#about" class="btn btn-primary mr-2 px-lg-4">About Me</a>
+                        <a href="#services" class="btn btn-primary px-lg-5 px-5">My Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 col-md-5 mt-5 d-flex justify-content-center align-items-center image-column">
+                <div class="my-image wow slideInRight ani-delay-1">
+                    <img src="vendor/img/user.svg" class="img-thumbnail rounded-circle mx-auto shadow-lg d-block" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-to-next shadow wow fadeIn ani-delay-3" id="scroll-to-next">
+        <img src="vendor/img/mouse.svg" class="animated bounce" style="width: 15px;animation-iteration-count: infinite" alt="#about">
+    </a>
+</section>
+<!--Home End-->
+
+
+<!--About Start-->
+<section id="about" class=" py-5 about">
+
+    <!--    Container Start-->
+    <div class="container p-3 p-md-5 rounded bg-light  mt-md-4" >
+        <div class="row  align-items-center py-5 py-md-0">
+            <div class="col-12 col-md-6 col-lg-6 wow fadeInLeft ani-delay-1">
+                <div class="text-right  mr-md-0 about-me-icon wow animate__fadeInLeft">
+                    <img src="vendor/img/about-me.svg" class="img-fluid mx-auto d-block w-100 position-relative" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 py-5 py-md-3">
+                <div class="w-100 text-center wow fadeInRight ani-delay-1">
+                    <h1 class="font-weight-bold">Hello, I'm</h1>
+                    <h2 class="font-weight-normal text-primary">Zaw Naing Oo</h2>
+                    <p class="text-black-50 py-4 py-md-2">A junior web developer.Studying at Computer University Thaton(UCST).I am currently working as a freelance developer and is always interested in a challenge.I help people find answers,solve problems,and get inspired.</p>
+                    <p class="">It's 2021:time to sink or swim.</p>
+                    <a href="" class="btn btn-primary px-3 text-uppercase">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Container End-->
+
+    <!--    Container Start-->
+    <div class="container mt-md-5 mt-2">
+        <div class="row justify-content-center about-hobby">
+            <div class="col-12 text-center">
+                <div class="hobby">
+                    <h4 class="text-uppercase">Hobbies and Interests</h4>
+                    <div class="diamond-png py-2">
+                        <img src="vendor/img/diamond.png" class="diamond text-primary" alt="">
+                    </div>
+                    <p class="text-black-50 mx-auto mt-2">နေ့စဥ် ကျွန်တော် စိတ်ပါဝင်စားစွာ ထိတွေ့မိသော ခံစားမိသော အရာမျာ:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-1">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-quran fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Reading</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-2">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-laptop-code fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Developing</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-3">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-magic fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Design</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-4">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-swimmer fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Swimming</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-1">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-mug-hot fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Coffee</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-2">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-futbol fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Football</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-3">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-plane-departure fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Travelling</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-4 pt-2">
+                <div class="interests-desc bg-light position-relative px-2 py-3 rounded wow lightSpeedIn ani-delay-4">
+                    <div class="hobbies d-flex align-items-center">
+                        <div class="text-center rounded-pill mr-4">
+                            <i class="fas fa-chart-line fa-2x icon "></i>
+                        </div>
+                        <div class="content">
+                            <h6 class="title mb-0">Other Activity</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Container End-->
+</section>
+<!--About End-->
+
+<!--Services Start-->
+<section id="services" class="container-fluid py-5 services">
+    <div class="row min-vh-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 service-first-col">
+                    <div class="my-md-0 mb-4">
+                        <h1 class="text-primary text-center align-items-center mb-2 mb-md-4 service-title">Services</h1>
+                        <h5 class="text-center align-items-center">Here is my services that I prefer for you.</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card services-card  shadow mb-5 wow slideInLeft ani-delay-1">
+                        <div class="card-body">
+                            <div class="">
+                                <img src="vendor/img/icon-1.svg" alt="">
+                            </div>
+                            <p class="font-weight-bold my-4 text-primary">
+                                Web Development
+                            </p>
+                            <p class="text-black-50 mb-5 font-weight-light services-card-description">
+                                I am  here to support you in creating a website tailored for your business, simple to use and highly customizable according to your needs.Create responsive websites optimized for browsing on any device in order to guarantee a top user experience.
+
+                            </p>
+                            <p class="text-primary ">
+                                " Dress for the job you want, not the job you have "
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card services-card  shadow mb-5 wow slideInLeft ani-delay-2">
+                        <div class="card-body">
+                            <div class="">
+                                <img src="vendor/img/icon-6.svg" alt="">
+                            </div>
+                            <p class="font-weight-bold my-4 text-primary">
+                                UI/UX Design
+                            </p>
+                            <p class="text-black-50 mb-5 font-weight-light services-card-description">
+                                UX writing has recently emerged as a distinct content writing area and can be defined as the practice of creating user interface (UI) copy that helps users easily interact with a digital product (a website, an app, an online tool, etc.).
+                            </p>
+                            <p class="text-primary ">
+                                " Dress for the job you want, not the job you have "
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card services-card  shadow mb-5 wow slideInLeft ani-delay-3">
+                        <div class="card-body">
+                            <div class="">
+                                <img src="vendor/img/Vue.js_Logo_2.svg" width="90px" alt="">
+                            </div>
+                            <p class="font-weight-bold my-4 text-primary">
+                                Vue Js
+                            </p>
+                            <p class="text-black-50 mb-5 font-weight-light services-card-description">
+                                Modern web apps require increasingly complicated front-ends that can handle large amounts of user interactions and dynamic data. Vue.js was the most sought after front-end framework by a landslide, with 46.6% of all front-end developers saying that they want to learn it.                            </p>
+                            <p class="text-primary ">
+                                " Dress for the job you want, not the job you have "
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h1 class="text-primary">My Skills</h1>
+                </div>
+                <div class=" d-flex justify-content-around w-100 py-5 wow slideInLeft ani-delay-1">
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="HTML5">
+                        <img src="vendor/img/html5-without-wordmark-color.svg" alt="">
+                    </div>
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="CSS3">
+                        <img src="vendor/img/css3-seeklogo.com.svg" alt="">
+                    </div>
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Javascript">
+                        <img src="vendor/img/javascript-seeklogo.com.svg" alt="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around w-100 py-3 wow slideInRight ani-delay-2">
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Jquery">
+                        <img src="vendor/img/jquery-seeklogo.com.svg" alt="">
+                    </div>
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Bootstrap">
+                        <img src="vendor/img/bootstrap-5-seeklogo.com.svg" alt="">
+                    </div>
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Vue Js">
+                        <img src="vendor/img/vuejs-seeklogo.com.svg" alt="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around w-100 py-3 wow slideInLeft ani-delay-3">
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Laravel">
+                        <img src="vendor/img/laravel-seeklogo.com.svg" alt="">
+                    </div>
+                    <div class="skills-card d-flex"  data-toggle="tooltip" data-placement="top" title="Php">
+                        <img src="vendor/img/php-seeklogo.com.svg" alt="">
+                    </div>
+                    <div class="skills-card"  data-toggle="tooltip" data-placement="top" title="Git">
+                        <img src="vendor/img/git-seeklogo.com.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Services End-->
+
+
+<!--Contact Start-->
+<section id="contact" class="my-5 contact bg-light" >
+    <div class="container  min-vh-100">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-12">
+                <div class="mt-2 pt-2">
+                    <h1 class="font-weight-bold text-uppercase text-center text-primary">Contact Me</h1>
+                    <div class=" text-center mb-3">
+                        <i class="fab fa-adn text-primary fa-3x"></i>
+                    </div>
+                    <h4 class="font-weight-normal text-black-50 text-center  text-uppercase">Get In Touch With Us</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-5 pt-2 wow fadeInLeft ani-delay-2">
+                <div class="contact-detail text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-phone-alt fa-3x"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h5 class="title text-uppercase mb-md-3">Phone</h5>
+                        <a href="tel:+959963924738" class="text-primary">09963924738</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 pt-2 wow fadeInUp ani-delay-3">
+                <div class="contact-detail text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-envelope fa-3x"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h5 class="title text-uppercase mb-md-3">Email</h5>
+                        <a href="mailto:zawnaingo002345@gmail.com" class="text-primary">zawnaingo002345@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 pt-2 wow fadeInRight ani-delay-2">
+                <div class="contact-detail text-center">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                    </div>
+                    <div class="contact-content">
+                        <h5 class="title text-uppercase mb-md-3">Location</h5>
+                        <a href="#" class="text-primary">Myanmar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 text-center">
+            <div class="col-12 w-100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d122203.76418019096!2d96.1609728!3d16.8329216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1636211420568!5m2!1sen!2smm" width="100%" height="350" style="border:0;"  allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact End-->
+
+<!--Footer Start-->
+<footer class="footer footer-bar bg-dark">
+    <div class="container text-center">
+        <p class="mb-0">Design With <i class="fas fa-heart text-danger"></i> By Zaw Naing Oo</p>
+    </div>
+</footer>
+<!--Footer End-->
+
+<!--Back To Top-->
+<a href="" id="back-to-top" class="rounded text-center back-to-top" onclick="scrollToTop()">
+    <i class="fas fa-angle-up fa-2x d-block"></i>
+</a>
+<!--Back To Top-->
+
+<script src="vendor/bootstrap/js/jquery.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="vendor/js/typed.js"></script>
+<script src="vendor/wow/wow.js"></script>
+<script src="vendor/way_point/jquery.waypoints.min.js"></script>
+<script src="vendor/js/app.js"></script>
+<script>
+
+
+const type = new Typed('#name', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 200,
+    loop: true,
+    strings: ['Zaw Naing Oo', 'Web Developer', 'Freelancer']
+});
+
+
+
+</script>
+</body>
+</html>
