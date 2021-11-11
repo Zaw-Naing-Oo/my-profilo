@@ -71,6 +71,11 @@ nav ul li a.active{
     transform: scale(1.5);
 }
 
+.social-icon .linkin:hover{
+    color:  #4875B4;
+    transform: scale(1.5);
+}
+
 .who-am-i{
     margin-top: 3rem !important;
 }
