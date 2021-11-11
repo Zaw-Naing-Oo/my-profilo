@@ -72,7 +72,7 @@ nav ul li a.active{
 }
 
 .social-icon .linkin:hover{
-    color:  #4875B4;
+    color: #0072b1;
     transform: scale(1.5);
 }
 
@@ -214,7 +214,7 @@ button:focus{
 
 .footer{
     position: relative;
-    color: #adb5bd; !important;
+    color: #adb5bd !important;
     font-size: 15px !important;
 }
 
@@ -292,7 +292,7 @@ button:focus{
 
 
 @media screen and (max-width: 400px) {
-    . image-column{
+    .image-column{
         margin-top: 2rem !important;
     }
 
@@ -303,7 +303,7 @@ button:focus{
 }
 
 @media screen and (max-width: 576px) {
-    . image-column{
+    .image-column{
         margin-top: 2rem !important;
     }
 
